@@ -30,3 +30,50 @@
 .margin-top(@mt: 0) {
 	margin-top: @mt;
 }
+
+.keyframes(@name, @rules) {
+	@keyframes @name {
+		@rules();
+	}
+}
+
+.keyframes(slideFromLeft, {
+    0% {
+        transform: translateX(-6000px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+});
+
+.keyframes(slideFromRight, {
+    0% {
+        transform: translateX(6000px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+});
+
+.keyframes(zoom, {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1.2);
+	}
+});
+
+.zoom(@time){
+	animation: zoom @time forwards;
+}
+
+.slide(@direction, @time, @delay: 0) {
+    animation: @direction @time forwards;
+    animation-delay: @delay;
+}
