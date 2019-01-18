@@ -1,19 +1,25 @@
 // Mixins Here
 
-.btn-gen(@color, @txtcolor, @fontsize: 18px, @txtalign: center, @btn-border-radius: 8px) {
+.btn-gen(@color, @txtcolor) {
 	background: @color;
 	color: @txtcolor;
-	font-size: @fontsize;
-	text-align: @txtalign;
-	border-radius: @btn-border-radius;
+	font-size: 18px;
+	text-align: center;
+	border-radius: 8px;
 	padding: 10px 20px;
-	max-width: 120px;
 	width: 120px;
+	max-width: 120px;
 
 	&:hover {
 		background: white;
 		color: black;
 		border: 1px solid red;
+	}
+
+	@media screen and @phone {
+		width: 100%;
+		max-width: 100%;
+		padding: 32px;
 	}
 }
 

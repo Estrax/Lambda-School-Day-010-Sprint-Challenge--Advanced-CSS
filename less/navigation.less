@@ -23,7 +23,7 @@
 	.nav-container {
 		display: flex;
 		flex-direction: column;
-		width: 80%;
+		width: 70%;
 		max-width: 800px;
 		padding: 12px 0;
 		align-items: center;
@@ -33,20 +33,25 @@
 
 		nav {
 			justify-content: space-between;
-			width: 60%;
+			width: 80%;
 			display: flex;
 			a {
 				color: @nav-font;
 				text-decoration: none;
 				font-size: 16px;
 				
-				&:first-child {
-					margin-right: 12px;
-				}
-				
 				&:not(:first-child) {
-					margin: 0 12px;
+					margin: 0 0 0 6px;
 				}
+
+				@media screen and @phone {
+					font-size: 14px;
+					margin: 0;
+				}
+			}
+
+			@media screen and @phone {
+				width: 100%;
 			}
 		}
 		div {
