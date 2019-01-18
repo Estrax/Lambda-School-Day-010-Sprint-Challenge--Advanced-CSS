@@ -1,0 +1,41 @@
+.subjects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 24px 0;
+    
+    .description {
+        width: 46%;
+        padding-bottom: 20px;
+        margin-bottom: 24px;
+        
+        h2 {
+            padding-top: 20px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: 2px solid black;
+            color: black;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 16px;
+        }
+
+        @media screen and @phone {
+            width: 80%;
+        }
+
+        &:nth-child(even) {
+            .slide(slideFromRight, 2s);
+        }
+
+        &:nth-child(odd) {
+            .slide(slideFromLeft, 2s);
+        }
+    }
+}

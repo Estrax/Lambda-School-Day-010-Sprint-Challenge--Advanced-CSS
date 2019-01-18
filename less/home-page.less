@@ -146,10 +146,12 @@
 
 			h3 {
 				margin-bottom: 24px;
+				.slide(slideFromRight, 5.8s);
 			}
 
 			label {
 				font-size: 1.6rem;
+				.slide(slideFromLeft, 6s);
 			}
 
 			input[type=text], input[type=email] {
@@ -161,10 +163,13 @@
 				border-radius: 6px;
 				margin: 10px 0;
 				resize: vertical;
+				.slide(slideFromRight, 6.5s);
 			}
+
 			input[type=submit] {
 				.btn-gen(rgb(34, 40, 58), @white);
 				cursor: pointer;
+				.slide(slideFromLeft, 6.8s);
 			}
 		}
 	}
