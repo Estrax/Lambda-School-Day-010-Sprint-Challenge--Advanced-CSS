@@ -5,24 +5,24 @@
 	position: fixed;
 	top: 0;
 	z-index: 2;
-    padding-bottom: 12px;
-    border-bottom: 2px solid @nav-border;
+	padding-bottom: 12px;
+	border-bottom: 2px solid @nav-border;
 
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0; 
-        left: 0;
-        width: 100%; 
-        height: 100%;  
-        opacity: .9; 
-        z-index: -1;
-        background: @nav-bg;
-    }
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0; 
+		left: 0;
+		width: 100%; 
+		height: 100%;  
+		opacity: .9; 
+		z-index: -1;
+		background: @nav-bg;
+	}
 
 	.nav-container {
-        display: flex;
-        flex-direction: column;
+		display: flex;
+		flex-direction: column;
 		width: 80%;
 		max-width: 800px;
 		padding: 12px 0;
@@ -33,13 +33,13 @@
 
 		nav {
 			justify-content: space-between;
-            width: 60%;
-            display: flex;
+			width: 60%;
+			display: flex;
 			a {
 				color: @nav-font;
 				text-decoration: none;
-                font-size: 16px;
-                
+				font-size: 16px;
+				
 				&:first-child {
 					margin-right: 12px;
 				}
@@ -51,8 +51,8 @@
 		}
 		div {
 			width: 100%;
-            text-align: center;
-            margin-bottom: 18px;
+			text-align: center;
+			margin-bottom: 18px;
 			a {
 				text-decoration: none;
 				color: @nav-font;
