@@ -34,13 +34,28 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive web design uses the number of distinct layouts for the number of screen sizes. Each layout depends on the screen size being used, so with each of these sizes in mind, one layout would have to be designed for one of the target device.
+On the other hand, responsive web design adapts to the size of the screen no matter what the target device screen size is. Typically, the layout uses CSS media queries to change styles. With the ‘fluid’ grid, it enables the page to resize its width and height to adapt to different screen sizes and display elements correctly.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+With desktop-first, the default styles for the target device point to the desktop version of the web app and the media queries are being used to change the styles for the other target devices (i.e. phones) usually using `max-width` or `max-height` properties.
+
+With mobile-first, the default target device is the mobile version of layout and the other devices are being targeted with the media queries with `min-width` or `min-height` properties.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Developers use it to make it simple for them to design. The default font size in the most browsers ("browser default") is 16px, so 62.5% of it is equal to 10px - it makes it easier to calculate REM units. Of course it may change if a person uses the different font size value (i.e. from the perspective of accessibility features).
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is the process of CSS generation from the preprocessor's own unique syntax. Preprocessors are being developed to simplify the process of creating the stylesheets, i.e. with the ability to set up variables and mixins and to make the reusable components that can be incorporated to the entities via composition.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I really like mixins. They are the equivalent of the (multiple)inheritance in the programming languages, so they allow to create useful reusable components aimed to speed up the process of development and at the same time to allow to make changes to the specific groups of entities really fast.
+
+Do not have any troubles at the moment.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
